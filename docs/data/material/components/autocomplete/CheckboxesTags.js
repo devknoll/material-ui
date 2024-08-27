@@ -16,6 +16,7 @@ export default function CheckboxesTags() {
       options={top100Films}
       disableCloseOnSelect
       getOptionLabel={(option) => option.title}
+      disablePortal={true}
       renderOption={(props, option, { selected }) => {
         const { key, ...optionProps } = props;
         return (
